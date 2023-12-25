@@ -1,0 +1,4 @@
+[console_scripts]
+intel_pub = camera_run.intel_pub:main
+intel_sub = camera_run.intel_sub:main
+
