@@ -1,0 +1,3 @@
+Invoking command in '/home/samet/hallo/build/vesc_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/samet/hallo/install/camera_run /usr/bin/cmake /home/samet/hallo/src/vesc/vesc_msgs -DCMAKE_INSTALL_PREFIX=/home/samet/hallo/install/vesc_msgs
+Invoked command in '/home/samet/hallo/build/vesc_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/samet/hallo/install/camera_run /usr/bin/cmake /home/samet/hallo/src/vesc/vesc_msgs -DCMAKE_INSTALL_PREFIX=/home/samet/hallo/install/vesc_msgs
+Invoking command in '/home/samet/hallo/build/vesc_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/samet/hallo/install/camera_run /usr/bin/cmake --build /home/samet/hallo/build/vesc_msgs -- -j4 -l4

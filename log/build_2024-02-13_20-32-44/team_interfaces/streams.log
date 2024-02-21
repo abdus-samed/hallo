@@ -1,0 +1,125 @@
+[0.934s] Invoking command in '/home/samet/hallo/build/team_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/samet/hallo/install/camera_run /usr/bin/cmake /home/samet/hallo/src/team_interfaces -DCMAKE_INSTALL_PREFIX=/home/samet/hallo/install/team_interfaces
+[1.093s] -- The C compiler identification is GNU 11.4.0
+[1.272s] -- The CXX compiler identification is GNU 11.4.0
+[1.287s] -- Detecting C compiler ABI info
+[1.540s] -- Detecting C compiler ABI info - done
+[1.561s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.562s] -- Detecting C compile features
+[1.563s] -- Detecting C compile features - done
+[1.570s] -- Detecting CXX compiler ABI info
+[1.839s] -- Detecting CXX compiler ABI info - done
+[1.871s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.873s] -- Detecting CXX compile features
+[1.875s] -- Detecting CXX compile features - done
+[1.891s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.412s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.621s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.628s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.644s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.733s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.803s] -- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+[3.608s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.255s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.968s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.018s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[5.024s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.080s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[5.080s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.080s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.080s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[5.124s] -- Found PythonExtra: .so  
+[5.251s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.315s] -- Added test 'lint_cmake' to check CMake code style
+[5.320s] -- Added test 'xmllint' to check XML markup files
+[5.339s] -- Configuring done
+[5.486s] -- Generating done
+[5.487s] -- Build files have been written to: /home/samet/hallo/build/team_interfaces
+[5.505s] Invoked command in '/home/samet/hallo/build/team_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/samet/hallo/install/camera_run /usr/bin/cmake /home/samet/hallo/src/team_interfaces -DCMAKE_INSTALL_PREFIX=/home/samet/hallo/install/team_interfaces
+[5.518s] Invoking command in '/home/samet/hallo/build/team_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/samet/hallo/install/camera_run /usr/bin/cmake --build /home/samet/hallo/build/team_interfaces -- -j4 -l4
+[5.738s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.876s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[5.911s] [  3%] Built target ament_cmake_python_copy_team_interfaces
+[7.024s] running egg_info
+[7.026s] creating team_interfaces.egg-info
+[7.026s] writing team_interfaces.egg-info/PKG-INFO
+[7.040s] writing dependency_links to team_interfaces.egg-info/dependency_links.txt
+[7.040s] writing top-level names to team_interfaces.egg-info/top_level.txt
+[7.041s] writing manifest file 'team_interfaces.egg-info/SOURCES.txt'
+[7.046s] reading manifest file 'team_interfaces.egg-info/SOURCES.txt'
+[7.047s] writing manifest file 'team_interfaces.egg-info/SOURCES.txt'
+[7.146s] [  3%] Built target ament_cmake_python_build_team_interfaces_egg
+[7.785s] [  4%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_c.dir/rosidl_generator_c/team_interfaces/msg/detail/car__functions.c.o[0m
+[7.979s] [  6%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_c.dir/rosidl_generator_c/team_interfaces/msg/detail/lane__functions.c.o[0m
+[7.989s] [  7%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_c.dir/rosidl_generator_c/team_interfaces/msg/detail/signs__functions.c.o[0m
+[8.022s] [  7%] Built target team_interfaces__cpp
+[8.088s] [  9%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_c.dir/rosidl_generator_c/team_interfaces/msg/detail/trafficlight__functions.c.o[0m
+[8.100s] [ 11%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_c.dir/rosidl_generator_c/team_interfaces/msg/detail/emergency__functions.c.o[0m
+[8.276s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[8.307s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[8.369s] [ 15%] [32m[1mLinking C shared library libteam_interfaces__rosidl_generator_c.so[0m
+[8.379s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[8.620s] [ 17%] Built target team_interfaces__rosidl_generator_c
+[8.704s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[9.897s] [ 20%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/team_interfaces/msg/car__type_support.cpp.o[0m
+[10.506s] [ 22%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/team_interfaces/msg/detail/car__type_support.cpp.o[0m
+[10.708s] [ 23%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/team_interfaces/msg/detail/dds_fastrtps/car__type_support.cpp.o[0m
+[10.936s] [ 25%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/team_interfaces/msg/detail/car__type_support_c.cpp.o[0m
+[11.250s] [ 26%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/team_interfaces/msg/lane__type_support.cpp.o[0m
+[12.445s] [ 28%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/team_interfaces/msg/detail/lane__type_support.cpp.o[0m
+[12.701s] [ 31%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/team_interfaces/msg/detail/lane__type_support_c.cpp.o[0m
+[12.702s] [ 31%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/team_interfaces/msg/signs__type_support.cpp.o[0m
+[12.801s] [ 33%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/team_interfaces/msg/detail/dds_fastrtps/lane__type_support.cpp.o[0m
+[14.206s] [ 34%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/team_interfaces/msg/trafficlight__type_support.cpp.o[0m
+[14.312s] [ 36%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/team_interfaces/msg/detail/signs__type_support_c.cpp.o[0m
+[14.474s] [ 38%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/team_interfaces/msg/detail/signs__type_support.cpp.o[0m
+[14.944s] [ 39%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/team_interfaces/msg/detail/dds_fastrtps/signs__type_support.cpp.o[0m
+[15.469s] [ 41%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/team_interfaces/msg/emergency__type_support.cpp.o[0m
+[16.004s] [ 42%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/team_interfaces/msg/detail/trafficlight__type_support_c.cpp.o[0m
+[16.129s] [ 44%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/team_interfaces/msg/detail/trafficlight__type_support.cpp.o[0m
+[16.644s] [ 46%] [32m[1mLinking CXX shared library libteam_interfaces__rosidl_typesupport_cpp.so[0m
+[16.805s] [ 47%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/team_interfaces/msg/detail/dds_fastrtps/trafficlight__type_support.cpp.o[0m
+[17.026s] [ 47%] Built target team_interfaces__rosidl_typesupport_cpp
+[17.126s] [ 49%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[17.624s] [ 50%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/team_interfaces/msg/detail/emergency__type_support_c.cpp.o[0m
+[17.767s] [ 52%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/team_interfaces/msg/detail/emergency__type_support.cpp.o[0m
+[18.337s] [ 53%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/team_interfaces/msg/detail/dds_fastrtps/emergency__type_support.cpp.o[0m
+[18.634s] [ 55%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/team_interfaces/msg/detail/car__type_support.c.o[0m
+[18.694s] [ 57%] [32m[1mLinking CXX shared library libteam_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[18.800s] [ 58%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/team_interfaces/msg/detail/lane__type_support.c.o[0m
+[18.974s] [ 60%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/team_interfaces/msg/detail/signs__type_support.c.o[0m
+[19.006s] [ 61%] [32m[1mLinking CXX shared library libteam_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[19.050s] [ 61%] Built target team_interfaces__rosidl_typesupport_fastrtps_c
+[19.100s] [ 63%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[19.125s] [ 65%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/team_interfaces/msg/detail/trafficlight__type_support.c.o[0m
+[19.287s] [ 66%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/team_interfaces/msg/detail/emergency__type_support.c.o[0m
+[19.334s] [ 68%] [32m[1mLinking CXX shared library libteam_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[19.360s] [ 68%] Built target team_interfaces__rosidl_typesupport_introspection_cpp
+[19.382s] [ 69%] [32m[1mLinking C shared library libteam_interfaces__rosidl_typesupport_introspection_c.so[0m
+[19.478s] [ 69%] Built target team_interfaces__rosidl_typesupport_introspection_c
+[19.539s] [ 69%] Built target team_interfaces__rosidl_typesupport_fastrtps_cpp
+[19.903s] [ 73%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/team_interfaces/msg/car__type_support.cpp.o[0m
+[19.903s] [ 73%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/team_interfaces/msg/lane__type_support.cpp.o[0m
+[19.906s] [ 74%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/team_interfaces/msg/signs__type_support.cpp.o[0m
+[19.916s] [ 76%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/team_interfaces/msg/trafficlight__type_support.cpp.o[0m
+[20.000s] [ 77%] [32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/team_interfaces/msg/emergency__type_support.cpp.o[0m
+[20.076s] [ 79%] [32m[1mLinking CXX shared library libteam_interfaces__rosidl_typesupport_c.so[0m
+[20.175s] [ 79%] Built target team_interfaces__rosidl_typesupport_c
+[20.226s] [ 79%] Built target team_interfaces
+[20.285s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[21.818s] [ 80%] Built target team_interfaces__py
+[21.890s] [ 82%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_py.dir/rosidl_generator_py/team_interfaces/msg/_lane_s.c.o[0m
+[21.923s] [ 84%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_py.dir/rosidl_generator_py/team_interfaces/msg/_signs_s.c.o[0m
+[21.924s] [ 85%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_py.dir/rosidl_generator_py/team_interfaces/msg/_trafficlight_s.c.o[0m
+[21.927s] [ 87%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_py.dir/rosidl_generator_py/team_interfaces/msg/_car_s.c.o[0m
+[22.210s] [ 88%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_py.dir/rosidl_generator_py/team_interfaces/msg/_emergency_s.c.o[0m
+[22.450s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/team_interfaces/libteam_interfaces__rosidl_generator_py.so[0m
+[22.676s] [ 90%] Built target team_interfaces__rosidl_generator_py
+[22.744s] [ 93%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/team_interfaces/_team_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[22.745s] [ 93%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/team_interfaces/_team_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[22.748s] [ 95%] [32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/team_interfaces/_team_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[23.012s] [100%] [32m[1mLinking C shared library rosidl_generator_py/team_interfaces/team_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[23.013s] [100%] [32m[1mLinking C shared library rosidl_generator_py/team_interfaces/team_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[23.013s] [100%] [32m[1mLinking C shared library rosidl_generator_py/team_interfaces/team_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[23.110s] [100%] Built target team_interfaces__rosidl_typesupport_introspection_c__pyext
+[23.110s] [100%] Built target team_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[23.112s] [100%] Built target team_interfaces__rosidl_typesupport_c__pyext

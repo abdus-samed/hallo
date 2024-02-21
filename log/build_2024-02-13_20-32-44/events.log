@@ -1,0 +1,685 @@
+[0.000000] (-) TimerEvent: {}
+[0.000225] (asio_cmake_module) JobQueued: {'identifier': 'asio_cmake_module', 'dependencies': OrderedDict()}
+[0.000278] (camera_run) JobQueued: {'identifier': 'camera_run', 'dependencies': OrderedDict()}
+[0.000315] (team_interfaces) JobQueued: {'identifier': 'team_interfaces', 'dependencies': OrderedDict()}
+[0.000349] (vesc_msgs) JobQueued: {'identifier': 'vesc_msgs', 'dependencies': OrderedDict()}
+[0.000379] (io_context) JobQueued: {'identifier': 'io_context', 'dependencies': OrderedDict([('asio_cmake_module', '/home/samet/hallo/install/asio_cmake_module')])}
+[0.000446] (vesc_ackermann) JobQueued: {'identifier': 'vesc_ackermann', 'dependencies': OrderedDict([('vesc_msgs', '/home/samet/hallo/install/vesc_msgs')])}
+[0.000482] (serial_driver) JobQueued: {'identifier': 'serial_driver', 'dependencies': OrderedDict([('asio_cmake_module', '/home/samet/hallo/install/asio_cmake_module'), ('io_context', '/home/samet/hallo/install/io_context')])}
+[0.000518] (udp_driver) JobQueued: {'identifier': 'udp_driver', 'dependencies': OrderedDict([('asio_cmake_module', '/home/samet/hallo/install/asio_cmake_module'), ('io_context', '/home/samet/hallo/install/io_context')])}
+[0.000552] (vesc_driver) JobQueued: {'identifier': 'vesc_driver', 'dependencies': OrderedDict([('vesc_msgs', '/home/samet/hallo/install/vesc_msgs'), ('io_context', '/home/samet/hallo/install/io_context'), ('serial_driver', '/home/samet/hallo/install/serial_driver')])}
+[0.000587] (vesc) JobQueued: {'identifier': 'vesc', 'dependencies': OrderedDict([('vesc_msgs', '/home/samet/hallo/install/vesc_msgs'), ('io_context', '/home/samet/hallo/install/io_context'), ('vesc_ackermann', '/home/samet/hallo/install/vesc_ackermann'), ('serial_driver', '/home/samet/hallo/install/serial_driver'), ('vesc_driver', '/home/samet/hallo/install/vesc_driver')])}
+[0.000626] (asio_cmake_module) JobStarted: {'identifier': 'asio_cmake_module'}
+[0.097696] (-) TimerEvent: {}
+[0.152995] (vesc_msgs) JobStarted: {'identifier': 'vesc_msgs'}
+[0.198917] (-) TimerEvent: {}
+[0.300471] (-) TimerEvent: {}
+[0.336672] (camera_run) JobStarted: {'identifier': 'camera_run'}
+[0.402061] (-) TimerEvent: {}
+[0.493115] (team_interfaces) JobStarted: {'identifier': 'team_interfaces'}
+[0.504729] (-) TimerEvent: {}
+[0.606696] (-) TimerEvent: {}
+[0.669323] (asio_cmake_module) JobProgress: {'identifier': 'asio_cmake_module', 'progress': 'cmake'}
+[0.670187] (asio_cmake_module) Command: {'cmd': ['/usr/bin/cmake', '/home/samet/hallo/src/transport_drivers/asio_cmake_module', '-DCMAKE_INSTALL_PREFIX=/home/samet/hallo/install/asio_cmake_module'], 'cwd': '/home/samet/hallo/build/asio_cmake_module', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'samet'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/samet/hallo/install/vesc_driver/lib:/home/samet/hallo/install/vesc_ackermann/lib:/home/samet/hallo/install/vesc_msgs/lib:/home/samet/hallo/install/udp_driver/lib:/home/samet/hallo/install/team_interfaces/lib:/home/samet/hallo/install/serial_driver/lib:/home/samet/hallo/install/io_context/lib'), ('HOME', '/home/samet'), ('OLDPWD', '/home/samet'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1767'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/samet/hallo/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'samet'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'samet'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/svm:@/tmp/.ICE-unix/1745,unix/svm:/tmp/.ICE-unix/1745'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/574a1548_51c7_465b_976b_b76970c99001'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LICSI2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/camera_run:/home/samet/hallo/install/asio_cmake_module'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/samet/hallo/build/asio_cmake_module'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/samet/hallo/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/samet/hallo/install/team_interfaces/local/lib/python3.10/dist-packages:/home/samet/hallo/install/camera_run/lib/python3.10/site-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/asio_cmake_module:/opt/ros/humble:/home/samet/hallo/install/camera_run')]), 'shell': False}
+[0.689231] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'cmake'}
+[0.689432] (vesc_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/samet/hallo/src/vesc/vesc_msgs', '-DCMAKE_INSTALL_PREFIX=/home/samet/hallo/install/vesc_msgs'], 'cwd': '/home/samet/hallo/build/vesc_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'samet'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/samet/hallo/install/vesc_driver/lib:/home/samet/hallo/install/vesc_ackermann/lib:/home/samet/hallo/install/vesc_msgs/lib:/home/samet/hallo/install/udp_driver/lib:/home/samet/hallo/install/team_interfaces/lib:/home/samet/hallo/install/serial_driver/lib:/home/samet/hallo/install/io_context/lib'), ('HOME', '/home/samet'), ('OLDPWD', '/home/samet'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1767'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/samet/hallo/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'samet'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'samet'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/svm:@/tmp/.ICE-unix/1745,unix/svm:/tmp/.ICE-unix/1745'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/574a1548_51c7_465b_976b_b76970c99001'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LICSI2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/camera_run:/home/samet/hallo/install/asio_cmake_module'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/samet/hallo/build/vesc_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/samet/hallo/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/samet/hallo/install/team_interfaces/local/lib/python3.10/dist-packages:/home/samet/hallo/install/camera_run/lib/python3.10/site-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/asio_cmake_module:/opt/ros/humble:/home/samet/hallo/install/camera_run')]), 'shell': False}
+[0.707374] (-) TimerEvent: {}
+[0.808520] (-) TimerEvent: {}
+[0.909347] (-) TimerEvent: {}
+[1.010208] (-) TimerEvent: {}
+[1.111473] (-) TimerEvent: {}
+[1.212279] (-) TimerEvent: {}
+[1.313082] (-) TimerEvent: {}
+[1.411901] (asio_cmake_module) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.412205] (asio_cmake_module) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.412358] (asio_cmake_module) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.412487] (asio_cmake_module) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.412602] (asio_cmake_module) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.412764] (asio_cmake_module) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.413337] (-) TimerEvent: {}
+[1.413881] (asio_cmake_module) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.414032] (asio_cmake_module) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.414788] (vesc_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.415207] (vesc_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.415507] (vesc_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.415770] (vesc_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.416234] (vesc_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.416522] (vesc_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.416756] (vesc_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.416983] (vesc_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.422118] (team_interfaces) JobProgress: {'identifier': 'team_interfaces', 'progress': 'cmake'}
+[1.424075] (team_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/samet/hallo/src/team_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/samet/hallo/install/team_interfaces'], 'cwd': '/home/samet/hallo/build/team_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'samet'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/samet/hallo/install/vesc_driver/lib:/home/samet/hallo/install/vesc_ackermann/lib:/home/samet/hallo/install/vesc_msgs/lib:/home/samet/hallo/install/udp_driver/lib:/home/samet/hallo/install/team_interfaces/lib:/home/samet/hallo/install/serial_driver/lib:/home/samet/hallo/install/io_context/lib'), ('HOME', '/home/samet'), ('OLDPWD', '/home/samet'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1767'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/samet/hallo/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'samet'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'samet'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/svm:@/tmp/.ICE-unix/1745,unix/svm:/tmp/.ICE-unix/1745'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/574a1548_51c7_465b_976b_b76970c99001'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LICSI2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/camera_run:/home/samet/hallo/install/asio_cmake_module'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/samet/hallo/build/team_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/samet/hallo/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/samet/hallo/install/team_interfaces/local/lib/python3.10/dist-packages:/home/samet/hallo/install/camera_run/lib/python3.10/site-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/asio_cmake_module:/opt/ros/humble:/home/samet/hallo/install/camera_run')]), 'shell': False}
+[1.513742] (-) TimerEvent: {}
+[1.585716] (team_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.604280] (vesc_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.613274] (vesc_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.614312] (-) TimerEvent: {}
+[1.615917] (vesc_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.616791] (vesc_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.619105] (vesc_msgs) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.7 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[1.645875] (asio_cmake_module) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.671182] (asio_cmake_module) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.672298] (asio_cmake_module) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.673738] (asio_cmake_module) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.679960] (asio_cmake_module) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.714901] (-) TimerEvent: {}
+[1.764631] (team_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.779153] (team_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.815213] (-) TimerEvent: {}
+[1.916333] (-) TimerEvent: {}
+[2.003079] (vesc_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[2.016844] (-) TimerEvent: {}
+[2.032594] (team_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.050283] (team_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.055168] (team_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.055526] (team_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.062156] (team_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.090269] (asio_cmake_module) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[2.117144] (-) TimerEvent: {}
+[2.123719] (camera_run) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/camera_run', 'build', '--build-base', '/home/samet/hallo/build/camera_run/build', 'install', '--record', '/home/samet/hallo/build/camera_run/install.log', '--single-version-externally-managed'], 'cwd': '/home/samet/hallo/src/camera_run', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:', 'USER': 'samet', 'LC_TIME': 'de_DE.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/samet/hallo/install/vesc_driver/lib:/home/samet/hallo/install/vesc_ackermann/lib:/home/samet/hallo/install/vesc_msgs/lib:/home/samet/hallo/install/udp_driver/lib:/home/samet/hallo/install/team_interfaces/lib:/home/samet/hallo/install/serial_driver/lib:/home/samet/hallo/install/io_context/lib', 'HOME': '/home/samet', 'OLDPWD': '/home/samet', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'de_DE.UTF-8', 'SYSTEMD_EXEC_PID': '1767', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/samet/hallo/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'samet', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'samet', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/svm:@/tmp/.ICE-unix/1745,unix/svm:/tmp/.ICE-unix/1745', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/574a1548_51c7_465b_976b_b76970c99001', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LICSI2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.103', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble:/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/camera_run:/home/samet/hallo/install/asio_cmake_module', 'SHELL': '/bin/bash', 'LC_NAME': 'de_DE.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/samet/hallo/build/camera_run', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/samet/hallo/build/camera_run/prefix_override:/home/samet/hallo/install/camera_run/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/samet/hallo/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/samet/hallo/install/team_interfaces/local/lib/python3.10/dist-packages:/home/samet/hallo/install/camera_run/lib/python3.10/site-packages', 'LC_NUMERIC': 'de_DE.UTF-8', 'LC_PAPER': 'de_DE.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/asio_cmake_module'}, 'shell': False}
+[2.217486] (-) TimerEvent: {}
+[2.290883] (asio_cmake_module) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.317805] (-) TimerEvent: {}
+[2.331279] (team_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.335687] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.354180] (vesc_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.363485] (team_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.365847] (team_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.367687] (team_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.383383] (team_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.418105] (-) TimerEvent: {}
+[2.443499] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.501242] (asio_cmake_module) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.505023] (asio_cmake_module) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.508772] (asio_cmake_module) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.514069] (asio_cmake_module) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.524842] (-) TimerEvent: {}
+[2.525338] (asio_cmake_module) StdoutLine: {'line': b'-- Generating done\n'}
+[2.525615] (asio_cmake_module) StdoutLine: {'line': b'-- Build files have been written to: /home/samet/hallo/build/asio_cmake_module\n'}
+[2.530992] (asio_cmake_module) CommandEnded: {'returncode': 0}
+[2.535016] (asio_cmake_module) JobProgress: {'identifier': 'asio_cmake_module', 'progress': 'build'}
+[2.535226] (asio_cmake_module) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/samet/hallo/build/asio_cmake_module', '--', '-j4', '-l4'], 'cwd': '/home/samet/hallo/build/asio_cmake_module', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'samet'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/samet/hallo/install/vesc_driver/lib:/home/samet/hallo/install/vesc_ackermann/lib:/home/samet/hallo/install/vesc_msgs/lib:/home/samet/hallo/install/udp_driver/lib:/home/samet/hallo/install/team_interfaces/lib:/home/samet/hallo/install/serial_driver/lib:/home/samet/hallo/install/io_context/lib'), ('HOME', '/home/samet'), ('OLDPWD', '/home/samet'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1767'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/samet/hallo/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'samet'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'samet'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/svm:@/tmp/.ICE-unix/1745,unix/svm:/tmp/.ICE-unix/1745'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/574a1548_51c7_465b_976b_b76970c99001'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LICSI2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/camera_run:/home/samet/hallo/install/asio_cmake_module'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/samet/hallo/build/asio_cmake_module'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/samet/hallo/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/samet/hallo/install/team_interfaces/local/lib/python3.10/dist-packages:/home/samet/hallo/install/camera_run/lib/python3.10/site-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/asio_cmake_module:/opt/ros/humble:/home/samet/hallo/install/camera_run')]), 'shell': False}
+[2.623111] (camera_run) StdoutLine: {'line': b'running egg_info\n'}
+[2.625249] (-) TimerEvent: {}
+[2.626486] (camera_run) StdoutLine: {'line': b'creating ../../build/camera_run/camera_run.egg-info\n'}
+[2.627371] (camera_run) StdoutLine: {'line': b'writing ../../build/camera_run/camera_run.egg-info/PKG-INFO\n'}
+[2.628256] (camera_run) StdoutLine: {'line': b'writing dependency_links to ../../build/camera_run/camera_run.egg-info/dependency_links.txt\n'}
+[2.629046] (camera_run) StdoutLine: {'line': b'writing entry points to ../../build/camera_run/camera_run.egg-info/entry_points.txt\n'}
+[2.629866] (camera_run) StdoutLine: {'line': b'writing requirements to ../../build/camera_run/camera_run.egg-info/requires.txt\n'}
+[2.630917] (camera_run) StdoutLine: {'line': b'writing top-level names to ../../build/camera_run/camera_run.egg-info/top_level.txt\n'}
+[2.636475] (camera_run) StdoutLine: {'line': b"writing manifest file '../../build/camera_run/camera_run.egg-info/SOURCES.txt'\n"}
+[2.637339] (camera_run) StdoutLine: {'line': b"reading manifest file '../../build/camera_run/camera_run.egg-info/SOURCES.txt'\n"}
+[2.638166] (camera_run) StdoutLine: {'line': b"writing manifest file '../../build/camera_run/camera_run.egg-info/SOURCES.txt'\n"}
+[2.638966] (camera_run) StdoutLine: {'line': b'running build\n'}
+[2.639912] (camera_run) StdoutLine: {'line': b'running build_py\n'}
+[2.640792] (camera_run) StdoutLine: {'line': b'creating /home/samet/hallo/build/camera_run/build\n'}
+[2.641622] (camera_run) StdoutLine: {'line': b'creating /home/samet/hallo/build/camera_run/build/lib\n'}
+[2.642423] (camera_run) StdoutLine: {'line': b'creating /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.643220] (camera_run) StdoutLine: {'line': b'copying camera_run/intel_pub.py -> /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.643997] (camera_run) StdoutLine: {'line': b'copying camera_run/teleop.py -> /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.644835] (camera_run) StdoutLine: {'line': b'copying camera_run/slope_node.py -> /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.645776] (camera_run) StdoutLine: {'line': b'copying camera_run/lane_recognition.py -> /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.646580] (camera_run) StdoutLine: {'line': b'copying camera_run/intel_sub.py -> /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.647392] (camera_run) StdoutLine: {'line': b'copying camera_run/intel_lane.py -> /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.648207] (camera_run) StdoutLine: {'line': b'copying camera_run/steering.py -> /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.648992] (camera_run) StdoutLine: {'line': b'copying camera_run/lane_follower.py -> /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.653639] (camera_run) StdoutLine: {'line': b'copying camera_run/bot.py -> /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.655978] (camera_run) StdoutLine: {'line': b'copying camera_run/__init__.py -> /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.656150] (camera_run) StdoutLine: {'line': b'copying camera_run/LaneDetection_realsense.py -> /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.656273] (camera_run) StdoutLine: {'line': b'copying camera_run/ackermann_to_vesc.py -> /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.656446] (camera_run) StdoutLine: {'line': b'copying camera_run/intel_lane_sub.py -> /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.657878] (camera_run) StdoutLine: {'line': b'copying camera_run/slope_sub.py -> /home/samet/hallo/build/camera_run/build/lib/camera_run\n'}
+[2.658176] (camera_run) StdoutLine: {'line': b'running install\n'}
+[2.658420] (camera_run) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[2.658705] (camera_run) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.658942] (camera_run) StdoutLine: {'line': b'running install_lib\n'}
+[2.659194] (camera_run) StdoutLine: {'line': b'creating /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.659422] (camera_run) StdoutLine: {'line': b'copying /home/samet/hallo/build/camera_run/build/lib/camera_run/intel_pub.py -> /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.659717] (camera_run) StdoutLine: {'line': b'copying /home/samet/hallo/build/camera_run/build/lib/camera_run/teleop.py -> /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.659841] (camera_run) StdoutLine: {'line': b'copying /home/samet/hallo/build/camera_run/build/lib/camera_run/slope_node.py -> /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.659964] (camera_run) StdoutLine: {'line': b'copying /home/samet/hallo/build/camera_run/build/lib/camera_run/lane_recognition.py -> /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.660223] (camera_run) StdoutLine: {'line': b'copying /home/samet/hallo/build/camera_run/build/lib/camera_run/intel_sub.py -> /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.660543] (camera_run) StdoutLine: {'line': b'copying /home/samet/hallo/build/camera_run/build/lib/camera_run/intel_lane.py -> /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.662211] (camera_run) StdoutLine: {'line': b'copying /home/samet/hallo/build/camera_run/build/lib/camera_run/steering.py -> /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.662389] (camera_run) StdoutLine: {'line': b'copying /home/samet/hallo/build/camera_run/build/lib/camera_run/lane_follower.py -> /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.662520] (camera_run) StdoutLine: {'line': b'copying /home/samet/hallo/build/camera_run/build/lib/camera_run/bot.py -> /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.663720] (camera_run) StdoutLine: {'line': b'copying /home/samet/hallo/build/camera_run/build/lib/camera_run/__init__.py -> /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.663898] (camera_run) StdoutLine: {'line': b'copying /home/samet/hallo/build/camera_run/build/lib/camera_run/LaneDetection_realsense.py -> /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.664029] (camera_run) StdoutLine: {'line': b'copying /home/samet/hallo/build/camera_run/build/lib/camera_run/ackermann_to_vesc.py -> /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.664307] (camera_run) StdoutLine: {'line': b'copying /home/samet/hallo/build/camera_run/build/lib/camera_run/intel_lane_sub.py -> /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.664426] (camera_run) StdoutLine: {'line': b'copying /home/samet/hallo/build/camera_run/build/lib/camera_run/slope_sub.py -> /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run\n'}
+[2.664540] (camera_run) StdoutLine: {'line': b'byte-compiling /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run/intel_pub.py to intel_pub.cpython-310.pyc\n'}
+[2.664687] (camera_run) StdoutLine: {'line': b'byte-compiling /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run/teleop.py to teleop.cpython-310.pyc\n'}
+[2.664801] (camera_run) StdoutLine: {'line': b'byte-compiling /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run/slope_node.py to slope_node.cpython-310.pyc\n'}
+[2.664914] (camera_run) StdoutLine: {'line': b'byte-compiling /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run/lane_recognition.py to lane_recognition.cpython-310.pyc\n'}
+[2.665032] (asio_cmake_module) CommandEnded: {'returncode': 0}
+[2.665584] (camera_run) StdoutLine: {'line': b'byte-compiling /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run/intel_sub.py to intel_sub.cpython-310.pyc\n'}
+[2.666882] (camera_run) StdoutLine: {'line': b'byte-compiling /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run/intel_lane.py to intel_lane.cpython-310.pyc\n'}
+[2.667206] (camera_run) StdoutLine: {'line': b'byte-compiling /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run/steering.py to steering.cpython-310.pyc\n'}
+[2.669436] (camera_run) StdoutLine: {'line': b'byte-compiling /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run/lane_follower.py to lane_follower.cpython-310.pyc\n'}
+[2.669688] (camera_run) StdoutLine: {'line': b'byte-compiling /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run/bot.py to bot.cpython-310.pyc\n'}
+[2.670869] (camera_run) StdoutLine: {'line': b'byte-compiling /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run/__init__.py to __init__.cpython-310.pyc\n'}
+[2.671312] (camera_run) StdoutLine: {'line': b'byte-compiling /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run/LaneDetection_realsense.py to LaneDetection_realsense.cpython-310.pyc\n'}
+[2.671622] (camera_run) StdoutLine: {'line': b'byte-compiling /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run/ackermann_to_vesc.py to ackermann_to_vesc.cpython-310.pyc\n'}
+[2.672082] (camera_run) StdoutLine: {'line': b'byte-compiling /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run/intel_lane_sub.py to intel_lane_sub.cpython-310.pyc\n'}
+[2.674476] (camera_run) StdoutLine: {'line': b'byte-compiling /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run/slope_sub.py to slope_sub.cpython-310.pyc\n'}
+[2.674760] (camera_run) StdoutLine: {'line': b'running install_data\n'}
+[2.674990] (camera_run) StdoutLine: {'line': b'creating /home/samet/hallo/install/camera_run/share/ament_index\n'}
+[2.675290] (camera_run) StdoutLine: {'line': b'creating /home/samet/hallo/install/camera_run/share/ament_index/resource_index\n'}
+[2.675412] (camera_run) StdoutLine: {'line': b'creating /home/samet/hallo/install/camera_run/share/ament_index/resource_index/packages\n'}
+[2.675543] (camera_run) StdoutLine: {'line': b'copying resource/camera_run -> /home/samet/hallo/install/camera_run/share/ament_index/resource_index/packages\n'}
+[2.675671] (camera_run) StdoutLine: {'line': b'copying package.xml -> /home/samet/hallo/install/camera_run/share/camera_run\n'}
+[2.675784] (camera_run) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.675914] (camera_run) StdoutLine: {'line': b'Copying ../../build/camera_run/camera_run.egg-info to /home/samet/hallo/install/camera_run/lib/python3.10/site-packages/camera_run-0.0.0-py3.10.egg-info\n'}
+[2.677127] (camera_run) StdoutLine: {'line': b'running install_scripts\n'}
+[2.710590] (camera_run) StdoutLine: {'line': b'Installing ackermann_to_vesc script to /home/samet/hallo/install/camera_run/lib/camera_run\n'}
+[2.711082] (camera_run) StdoutLine: {'line': b'Installing bot script to /home/samet/hallo/install/camera_run/lib/camera_run\n'}
+[2.711357] (camera_run) StdoutLine: {'line': b'Installing detection script to /home/samet/hallo/install/camera_run/lib/camera_run\n'}
+[2.711837] (camera_run) StdoutLine: {'line': b'Installing detection_node script to /home/samet/hallo/install/camera_run/lib/camera_run\n'}
+[2.712035] (camera_run) StdoutLine: {'line': b'Installing follower script to /home/samet/hallo/install/camera_run/lib/camera_run\n'}
+[2.712339] (camera_run) StdoutLine: {'line': b'Installing intel_lane script to /home/samet/hallo/install/camera_run/lib/camera_run\n'}
+[2.712632] (camera_run) StdoutLine: {'line': b'Installing intel_lane_sub script to /home/samet/hallo/install/camera_run/lib/camera_run\n'}
+[2.712870] (camera_run) StdoutLine: {'line': b'Installing intel_pub script to /home/samet/hallo/install/camera_run/lib/camera_run\n'}
+[2.713258] (camera_run) StdoutLine: {'line': b'Installing intel_sub script to /home/samet/hallo/install/camera_run/lib/camera_run\n'}
+[2.713497] (camera_run) StdoutLine: {'line': b'Installing slope_node script to /home/samet/hallo/install/camera_run/lib/camera_run\n'}
+[2.713719] (camera_run) StdoutLine: {'line': b'Installing slope_sub script to /home/samet/hallo/install/camera_run/lib/camera_run\n'}
+[2.714009] (camera_run) StdoutLine: {'line': b'Installing steering script to /home/samet/hallo/install/camera_run/lib/camera_run\n'}
+[2.714131] (camera_run) StdoutLine: {'line': b'Installing tele script to /home/samet/hallo/install/camera_run/lib/camera_run\n'}
+[2.714404] (camera_run) StdoutLine: {'line': b"writing list of installed files to '/home/samet/hallo/build/camera_run/install.log'\n"}
+[2.725589] (-) TimerEvent: {}
+[2.766562] (asio_cmake_module) JobProgress: {'identifier': 'asio_cmake_module', 'progress': 'install'}
+[2.788127] (asio_cmake_module) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/samet/hallo/build/asio_cmake_module'], 'cwd': '/home/samet/hallo/build/asio_cmake_module', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'samet'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/samet/hallo/install/vesc_driver/lib:/home/samet/hallo/install/vesc_ackermann/lib:/home/samet/hallo/install/vesc_msgs/lib:/home/samet/hallo/install/udp_driver/lib:/home/samet/hallo/install/team_interfaces/lib:/home/samet/hallo/install/serial_driver/lib:/home/samet/hallo/install/io_context/lib'), ('HOME', '/home/samet'), ('OLDPWD', '/home/samet'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1767'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/samet/hallo/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'samet'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'samet'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/svm:@/tmp/.ICE-unix/1745,unix/svm:/tmp/.ICE-unix/1745'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/574a1548_51c7_465b_976b_b76970c99001'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LICSI2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/camera_run:/home/samet/hallo/install/asio_cmake_module'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/samet/hallo/build/asio_cmake_module'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/samet/hallo/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/samet/hallo/install/team_interfaces/local/lib/python3.10/dist-packages:/home/samet/hallo/install/camera_run/lib/python3.10/site-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/asio_cmake_module:/opt/ros/humble:/home/samet/hallo/install/camera_run')]), 'shell': False}
+[2.793065] (camera_run) CommandEnded: {'returncode': 0}
+[2.812531] (asio_cmake_module) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.815849] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/ament_index/resource_index/package_run_dependencies/asio_cmake_module\n'}
+[2.821614] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/ament_index/resource_index/parent_prefix_path/asio_cmake_module\n'}
+[2.825872] (-) TimerEvent: {}
+[2.828181] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/environment/ament_prefix_path.sh\n'}
+[2.836036] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/environment/ament_prefix_path.dsv\n'}
+[2.837867] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/environment/path.sh\n'}
+[2.838766] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/environment/path.dsv\n'}
+[2.839280] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/local_setup.bash\n'}
+[2.839788] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/local_setup.sh\n'}
+[2.840366] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/local_setup.zsh\n'}
+[2.841276] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/local_setup.dsv\n'}
+[2.841843] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/package.dsv\n'}
+[2.842678] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/ament_index/resource_index/packages/asio_cmake_module\n'}
+[2.843261] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_module-extras.cmake\n'}
+[2.844212] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_moduleConfig.cmake\n'}
+[2.845455] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_moduleConfig-version.cmake\n'}
+[2.845841] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/package.xml\n'}
+[2.846152] (asio_cmake_module) StdoutLine: {'line': b'-- Up-to-date: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/cmake\n'}
+[2.846595] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules\n'}
+[2.846920] (asio_cmake_module) StdoutLine: {'line': b'-- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules/FindASIO.cmake\n'}
+[2.905201] (team_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[2.910893] (camera_run) JobEnded: {'identifier': 'camera_run', 'rc': 0}
+[2.913441] (asio_cmake_module) CommandEnded: {'returncode': 0}
+[2.926288] (-) TimerEvent: {}
+[3.027003] (-) TimerEvent: {}
+[3.113362] (team_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[3.121130] (team_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.128324] (-) TimerEvent: {}
+[3.136907] (team_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.224187] (team_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.228604] (-) TimerEvent: {}
+[3.239711] (asio_cmake_module) JobEnded: {'identifier': 'asio_cmake_module', 'rc': 0}
+[3.242347] (io_context) JobStarted: {'identifier': 'io_context'}
+[3.265654] (vesc_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.294513] (team_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[3.329668] (-) TimerEvent: {}
+[3.378822] (io_context) JobProgress: {'identifier': 'io_context', 'progress': 'cmake'}
+[3.380344] (io_context) Command: {'cmd': ['/usr/bin/cmake', '/home/samet/hallo/src/transport_drivers/io_context', '-DCMAKE_INSTALL_PREFIX=/home/samet/hallo/install/io_context'], 'cwd': '/home/samet/hallo/build/io_context', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'samet'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/samet/hallo/install/vesc_driver/lib:/home/samet/hallo/install/vesc_ackermann/lib:/home/samet/hallo/install/vesc_msgs/lib:/home/samet/hallo/install/udp_driver/lib:/home/samet/hallo/install/team_interfaces/lib:/home/samet/hallo/install/serial_driver/lib:/home/samet/hallo/install/io_context/lib'), ('HOME', '/home/samet'), ('OLDPWD', '/home/samet'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1767'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/samet/hallo/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'samet'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'samet'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/svm:@/tmp/.ICE-unix/1745,unix/svm:/tmp/.ICE-unix/1745'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/574a1548_51c7_465b_976b_b76970c99001'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LICSI2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/camera_run:/home/samet/hallo/install/asio_cmake_module'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/samet/hallo/build/io_context'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/samet/hallo/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/samet/hallo/install/team_interfaces/local/lib/python3.10/dist-packages:/home/samet/hallo/install/camera_run/lib/python3.10/site-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/samet/hallo/install/asio_cmake_module:/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/opt/ros/humble:/home/samet/hallo/install/camera_run')]), 'shell': False}
+[3.430283] (-) TimerEvent: {}
+[3.527193] (io_context) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[3.536190] (-) TimerEvent: {}
+[3.639888] (-) TimerEvent: {}
+[3.707287] (io_context) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.724586] (io_context) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.740225] (-) TimerEvent: {}
+[3.841848] (-) TimerEvent: {}
+[3.919900] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.942355] (-) TimerEvent: {}
+[4.017528] (io_context) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.040433] (io_context) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.041529] (io_context) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.043362] (io_context) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.043541] (-) TimerEvent: {}
+[4.047267] (io_context) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.099997] (team_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[4.143995] (-) TimerEvent: {}
+[4.246168] (-) TimerEvent: {}
+[4.347199] (-) TimerEvent: {}
+[4.412098] (io_context) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.415683] (io_context) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.420108] (io_context) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.420424] (io_context) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.440728] (io_context) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.7 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[4.447964] (-) TimerEvent: {}
+[4.548916] (-) TimerEvent: {}
+[4.654679] (-) TimerEvent: {}
+[4.748014] (team_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.763967] (-) TimerEvent: {}
+[4.864734] (-) TimerEvent: {}
+[4.928461] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.965632] (-) TimerEvent: {}
+[4.980108] (vesc_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.984618] (vesc_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[5.045426] (io_context) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[5.067815] (-) TimerEvent: {}
+[5.071781] (vesc_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[5.075751] (vesc_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.076162] (vesc_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[5.076364] (vesc_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[5.154017] (vesc_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[5.168112] (-) TimerEvent: {}
+[5.275926] (-) TimerEvent: {}
+[5.336284] (vesc_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.376260] (-) TimerEvent: {}
+[5.416804] (vesc_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.422413] (vesc_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.425675] (vesc_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.432597] (vesc_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.460890] (team_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.476560] (-) TimerEvent: {}
+[5.510553] (team_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[5.516803] (team_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[5.538734] (vesc_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[5.545478] (vesc_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/samet/hallo/build/vesc_msgs\n'}
+[5.552000] (io_context) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.558136] (io_context) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.569350] (vesc_msgs) CommandEnded: {'returncode': 0}
+[5.570801] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'build'}
+[5.571892] (vesc_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/samet/hallo/build/vesc_msgs', '--', '-j4', '-l4'], 'cwd': '/home/samet/hallo/build/vesc_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'samet'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/samet/hallo/install/vesc_driver/lib:/home/samet/hallo/install/vesc_ackermann/lib:/home/samet/hallo/install/vesc_msgs/lib:/home/samet/hallo/install/udp_driver/lib:/home/samet/hallo/install/team_interfaces/lib:/home/samet/hallo/install/serial_driver/lib:/home/samet/hallo/install/io_context/lib'), ('HOME', '/home/samet'), ('OLDPWD', '/home/samet'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1767'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/samet/hallo/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'samet'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'samet'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/svm:@/tmp/.ICE-unix/1745,unix/svm:/tmp/.ICE-unix/1745'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/574a1548_51c7_465b_976b_b76970c99001'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LICSI2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/camera_run:/home/samet/hallo/install/asio_cmake_module'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/samet/hallo/build/vesc_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/samet/hallo/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/samet/hallo/install/team_interfaces/local/lib/python3.10/dist-packages:/home/samet/hallo/install/camera_run/lib/python3.10/site-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/asio_cmake_module:/opt/ros/humble:/home/samet/hallo/install/camera_run')]), 'shell': False}
+[5.573051] (team_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[5.573249] (team_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.573402] (team_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[5.573519] (team_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[5.575066] (io_context) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.576828] (-) TimerEvent: {}
+[5.600628] (io_context) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.617116] (team_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[5.660243] (io_context) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.677047] (-) TimerEvent: {}
+[5.702682] (vesc_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.744198] (team_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.768568] (vesc_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.777519] (-) TimerEvent: {}
+[5.808186] (team_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.813165] (team_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.832070] (team_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.843059] (io_context) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.848862] (io_context) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.857576] (vesc_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_vesc_msgs\n'}
+[5.877856] (-) TimerEvent: {}
+[5.978657] (-) TimerEvent: {}
+[5.979315] (team_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[5.979582] (team_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/samet/hallo/build/team_interfaces\n'}
+[5.997566] (team_interfaces) CommandEnded: {'returncode': 0}
+[5.998739] (team_interfaces) JobProgress: {'identifier': 'team_interfaces', 'progress': 'build'}
+[6.010841] (team_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/samet/hallo/build/team_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/samet/hallo/build/team_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'samet'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/samet/hallo/install/vesc_driver/lib:/home/samet/hallo/install/vesc_ackermann/lib:/home/samet/hallo/install/vesc_msgs/lib:/home/samet/hallo/install/udp_driver/lib:/home/samet/hallo/install/team_interfaces/lib:/home/samet/hallo/install/serial_driver/lib:/home/samet/hallo/install/io_context/lib'), ('HOME', '/home/samet'), ('OLDPWD', '/home/samet'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1767'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/samet/hallo/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'samet'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'samet'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/svm:@/tmp/.ICE-unix/1745,unix/svm:/tmp/.ICE-unix/1745'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/574a1548_51c7_465b_976b_b76970c99001'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LICSI2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/camera_run:/home/samet/hallo/install/asio_cmake_module'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/samet/hallo/build/team_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/samet/hallo/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/samet/hallo/install/team_interfaces/local/lib/python3.10/dist-packages:/home/samet/hallo/install/camera_run/lib/python3.10/site-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/samet/hallo/install/vesc:/home/samet/hallo/install/vesc_driver:/home/samet/hallo/install/vesc_ackermann:/home/samet/hallo/install/vesc_msgs:/home/samet/hallo/install/udp_driver:/home/samet/hallo/install/team_interfaces:/home/samet/hallo/install/serial_driver:/home/samet/hallo/install/io_context:/home/samet/hallo/install/asio_cmake_module:/opt/ros/humble:/home/samet/hallo/install/camera_run')]), 'shell': False}
+[6.080197] (-) TimerEvent: {}
+[6.181309] (-) TimerEvent: {}
+[6.230896] (team_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.272000] (io_context) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.281591] (-) TimerEvent: {}
+[6.368541] (team_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.381956] (-) TimerEvent: {}
+[6.404381] (team_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_team_interfaces\n'}
+[6.421030] (io_context) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.482222] (-) TimerEvent: {}
+[6.583040] (-) TimerEvent: {}
+[6.596536] (io_context) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.620929] (io_context) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.683365] (-) TimerEvent: {}
+[6.784201] (-) TimerEvent: {}
+[6.832109] (io_context) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.832410] (io_context) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.891465] (-) TimerEvent: {}
+[6.891978] (vesc_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[6.892217] (vesc_msgs) StdoutLine: {'line': b'creating vesc_msgs.egg-info\n'}
+[6.892451] (vesc_msgs) StdoutLine: {'line': b'writing vesc_msgs.egg-info/PKG-INFO\n'}
+[6.892575] (vesc_msgs) StdoutLine: {'line': b'writing dependency_links to vesc_msgs.egg-info/dependency_links.txt\n'}
+[6.892771] (vesc_msgs) StdoutLine: {'line': b'writing top-level names to vesc_msgs.egg-info/top_level.txt\n'}
+[6.893087] (vesc_msgs) StdoutLine: {'line': b"writing manifest file 'vesc_msgs.egg-info/SOURCES.txt'\n"}
+[6.896276] (vesc_msgs) StdoutLine: {'line': b"reading manifest file 'vesc_msgs.egg-info/SOURCES.txt'\n"}
+[6.897081] (vesc_msgs) StdoutLine: {'line': b"writing manifest file 'vesc_msgs.egg-info/SOURCES.txt'\n"}
+[6.991826] (-) TimerEvent: {}
+[7.076732] (vesc_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_vesc_msgs_egg\n'}
+[7.092160] (-) TimerEvent: {}
+[7.192952] (-) TimerEvent: {}
+[7.293754] (-) TimerEvent: {}
+[7.296184] (io_context) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[7.296457] (io_context) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.394079] (-) TimerEvent: {}
+[7.494893] (-) TimerEvent: {}
+[7.516962] (team_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[7.518628] (team_interfaces) StdoutLine: {'line': b'creating team_interfaces.egg-info\n'}
+[7.519345] (team_interfaces) StdoutLine: {'line': b'writing team_interfaces.egg-info/PKG-INFO\n'}
+[7.532550] (team_interfaces) StdoutLine: {'line': b'writing dependency_links to team_interfaces.egg-info/dependency_links.txt\n'}
+[7.533438] (team_interfaces) StdoutLine: {'line': b'writing top-level names to team_interfaces.egg-info/top_level.txt\n'}
+[7.534067] (team_interfaces) StdoutLine: {'line': b"writing manifest file 'team_interfaces.egg-info/SOURCES.txt'\n"}
+[7.539014] (team_interfaces) StdoutLine: {'line': b"reading manifest file 'team_interfaces.egg-info/SOURCES.txt'\n"}
+[7.540443] (team_interfaces) StdoutLine: {'line': b"writing manifest file 'team_interfaces.egg-info/SOURCES.txt'\n"}
+[7.595249] (-) TimerEvent: {}
+[7.638910] (team_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_team_interfaces_egg\n'}
+[7.664801] (vesc_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o\x1b[0m\n'}
+[7.695548] (-) TimerEvent: {}
+[7.796418] (-) TimerEvent: {}
+[7.816851] (vesc_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o\x1b[0m\n'}
+[7.829935] (vesc_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.o\x1b[0m\n'}
+[7.868751] (vesc_msgs) StdoutLine: {'line': b'[  9%] Built target vesc_msgs__cpp\n'}
+[7.896527] (vesc_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.o\x1b[0m\n'}
+[7.896838] (-) TimerEvent: {}
+[7.952535] (vesc_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.997503] (-) TimerEvent: {}
+[8.076007] (io_context) StderrLine: {'line': b'\x1b[31mCMake Error at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:230 (message):\n'}
+[8.076346] (io_context) StderrLine: {'line': b'  Could NOT find ASIO (missing: ASIO_INCLUDE_DIRS)\n'}
+[8.076475] (io_context) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[8.076605] (io_context) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_FPHSA_FAILURE_MESSAGE)\n'}
+[8.076717] (io_context) StderrLine: {'line': b'  /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules/FindASIO.cmake:19 (find_package_handle_standard_args)\n'}
+[8.077125] (io_context) StderrLine: {'line': b'  CMakeLists.txt:34 (find_package)\n'}
+[8.077260] (io_context) StderrLine: {'line': b'\n'}
+[8.079643] (vesc_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.080039] (io_context) StderrLine: {'line': b'\x1b[0m\n'}
+[8.083993] (io_context) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[8.084264] (io_context) StdoutLine: {'line': b'See also "/home/samet/hallo/build/io_context/CMakeFiles/CMakeOutput.log".\n'}
+[8.097805] (-) TimerEvent: {}
+[8.110723] (io_context) CommandEnded: {'returncode': 1}
+[8.149698] (vesc_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[8.162356] (vesc_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libvesc_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[8.200229] (-) TimerEvent: {}
+[8.276920] (team_interfaces) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_c.dir/rosidl_generator_c/team_interfaces/msg/detail/car__functions.c.o\x1b[0m\n'}
+[8.304401] (-) TimerEvent: {}
+[8.332845] (io_context) JobEnded: {'identifier': 'io_context', 'rc': 1}
+[8.404739] (-) TimerEvent: {}
+[8.408244] (vesc_msgs) StdoutLine: {'line': b'[ 18%] Built target vesc_msgs__rosidl_generator_c\n'}
+[8.471350] (team_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_c.dir/rosidl_generator_c/team_interfaces/msg/detail/lane__functions.c.o\x1b[0m\n'}
+[8.481710] (team_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_c.dir/rosidl_generator_c/team_interfaces/msg/detail/signs__functions.c.o\x1b[0m\n'}
+[8.489324] (vesc_msgs) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.505067] (-) TimerEvent: {}
+[8.514571] (team_interfaces) StdoutLine: {'line': b'[  7%] Built target team_interfaces__cpp\n'}
+[8.581028] (team_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_c.dir/rosidl_generator_c/team_interfaces/msg/detail/trafficlight__functions.c.o\x1b[0m\n'}
+[8.592514] (team_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_c.dir/rosidl_generator_c/team_interfaces/msg/detail/emergency__functions.c.o\x1b[0m\n'}
+[8.605371] (-) TimerEvent: {}
+[8.706199] (-) TimerEvent: {}
+[8.768947] (team_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.799614] (team_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.806532] (-) TimerEvent: {}
+[8.861633] (team_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking C shared library libteam_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[8.871907] (team_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[8.906826] (-) TimerEvent: {}
+[9.010509] (-) TimerEvent: {}
+[9.111480] (-) TimerEvent: {}
+[9.113416] (team_interfaces) StdoutLine: {'line': b'[ 17%] Built target team_interfaces__rosidl_generator_c\n'}
+[9.197364] (team_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.211815] (-) TimerEvent: {}
+[9.312590] (-) TimerEvent: {}
+[9.413424] (-) TimerEvent: {}
+[9.514230] (-) TimerEvent: {}
+[9.615048] (-) TimerEvent: {}
+[9.717164] (-) TimerEvent: {}
+[9.817710] (-) TimerEvent: {}
+[9.907868] (vesc_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state__type_support.cpp.o\x1b[0m\n'}
+[9.918025] (-) TimerEvent: {}
+[10.019315] (-) TimerEvent: {}
+[10.120183] (-) TimerEvent: {}
+[10.220978] (-) TimerEvent: {}
+[10.239893] (vesc_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_state__type_support.cpp.o\x1b[0m\n'}
+[10.321268] (-) TimerEvent: {}
+[10.338240] (vesc_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state__type_support.cpp.o\x1b[0m\n'}
+[10.390322] (team_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/team_interfaces/msg/car__type_support.cpp.o\x1b[0m\n'}
+[10.421588] (-) TimerEvent: {}
+[10.522412] (-) TimerEvent: {}
+[10.623239] (-) TimerEvent: {}
+[10.724084] (-) TimerEvent: {}
+[10.824910] (-) TimerEvent: {}
+[10.925709] (-) TimerEvent: {}
+[10.944446] (vesc_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state__type_support_c.cpp.o\x1b[0m\n'}
+[10.998519] (team_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/team_interfaces/msg/detail/car__type_support.cpp.o\x1b[0m\n'}
+[11.026007] (-) TimerEvent: {}
+[11.106856] (vesc_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state_stamped__type_support.cpp.o\x1b[0m\n'}
+[11.126326] (-) TimerEvent: {}
+[11.200891] (team_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/team_interfaces/msg/detail/dds_fastrtps/car__type_support.cpp.o\x1b[0m\n'}
+[11.226650] (-) TimerEvent: {}
+[11.327193] (-) TimerEvent: {}
+[11.427747] (-) TimerEvent: {}
+[11.429134] (team_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/team_interfaces/msg/detail/car__type_support_c.cpp.o\x1b[0m\n'}
+[11.528083] (-) TimerEvent: {}
+[11.628712] (-) TimerEvent: {}
+[11.729735] (-) TimerEvent: {}
+[11.743289] (team_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/team_interfaces/msg/lane__type_support.cpp.o\x1b[0m\n'}
+[11.829997] (-) TimerEvent: {}
+[11.930724] (-) TimerEvent: {}
+[12.031700] (-) TimerEvent: {}
+[12.132522] (-) TimerEvent: {}
+[12.133108] (vesc_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_state_stamped__type_support.cpp.o\x1b[0m\n'}
+[12.232790] (-) TimerEvent: {}
+[12.333643] (-) TimerEvent: {}
+[12.379389] (vesc_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state_stamped__type_support.cpp.o\x1b[0m\n'}
+[12.433962] (-) TimerEvent: {}
+[12.534724] (-) TimerEvent: {}
+[12.635586] (-) TimerEvent: {}
+[12.736477] (-) TimerEvent: {}
+[12.756422] (vesc_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.cpp.o\x1b[0m\n'}
+[12.814070] (vesc_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[12.836721] (-) TimerEvent: {}
+[12.937370] (-) TimerEvent: {}
+[12.937826] (team_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/team_interfaces/msg/detail/lane__type_support.cpp.o\x1b[0m\n'}
+[13.037858] (-) TimerEvent: {}
+[13.138675] (-) TimerEvent: {}
+[13.193191] (team_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/team_interfaces/msg/detail/lane__type_support_c.cpp.o\x1b[0m\n'}
+[13.194250] (team_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/team_interfaces/msg/signs__type_support.cpp.o\x1b[0m\n'}
+[13.238997] (-) TimerEvent: {}
+[13.293320] (team_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/team_interfaces/msg/detail/dds_fastrtps/lane__type_support.cpp.o\x1b[0m\n'}
+[13.339311] (-) TimerEvent: {}
+[13.440165] (-) TimerEvent: {}
+[13.540948] (-) TimerEvent: {}
+[13.643268] (-) TimerEvent: {}
+[13.744116] (-) TimerEvent: {}
+[13.845112] (-) TimerEvent: {}
+[13.946053] (-) TimerEvent: {}
+[14.047035] (-) TimerEvent: {}
+[14.054525] (vesc_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.cpp.o\x1b[0m\n'}
+[14.103454] (vesc_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.o\x1b[0m\n'}
+[14.147356] (-) TimerEvent: {}
+[14.225343] (vesc_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.cpp.o\x1b[0m\n'}
+[14.247723] (-) TimerEvent: {}
+[14.330194] (vesc_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.cpp.o\x1b[0m\n'}
+[14.347994] (-) TimerEvent: {}
+[14.460383] (-) TimerEvent: {}
+[14.561617] (-) TimerEvent: {}
+[14.662768] (-) TimerEvent: {}
+[14.698584] (team_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/team_interfaces/msg/trafficlight__type_support.cpp.o\x1b[0m\n'}
+[14.763234] (-) TimerEvent: {}
+[14.804340] (team_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/team_interfaces/msg/detail/signs__type_support_c.cpp.o\x1b[0m\n'}
+[14.863596] (-) TimerEvent: {}
+[14.964960] (-) TimerEvent: {}
+[14.965987] (team_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/team_interfaces/msg/detail/signs__type_support.cpp.o\x1b[0m\n'}
+[15.065184] (-) TimerEvent: {}
+[15.166021] (-) TimerEvent: {}
+[15.267322] (-) TimerEvent: {}
+[15.355782] (vesc_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[15.367670] (-) TimerEvent: {}
+[15.435862] (team_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/team_interfaces/msg/detail/dds_fastrtps/signs__type_support.cpp.o\x1b[0m\n'}
+[15.468006] (-) TimerEvent: {}
+[15.569268] (-) TimerEvent: {}
+[15.670120] (-) TimerEvent: {}
+[15.689956] (vesc_msgs) StdoutLine: {'line': b'[ 45%] Built target vesc_msgs__rosidl_typesupport_cpp\n'}
+[15.753688] (vesc_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[15.758411] (vesc_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.cpp.o\x1b[0m\n'}
+[15.770429] (-) TimerEvent: {}
+[15.854483] (vesc_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp.o\x1b[0m\n'}
+[15.870711] (-) TimerEvent: {}
+[15.960391] (team_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/team_interfaces/msg/emergency__type_support.cpp.o\x1b[0m\n'}
+[15.971078] (-) TimerEvent: {}
+[16.023643] (vesc_msgs) StdoutLine: {'line': b'[ 52%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[16.071352] (-) TimerEvent: {}
+[16.172314] (-) TimerEvent: {}
+[16.273519] (-) TimerEvent: {}
+[16.374343] (-) TimerEvent: {}
+[16.475127] (-) TimerEvent: {}
+[16.496771] (team_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/team_interfaces/msg/detail/trafficlight__type_support_c.cpp.o\x1b[0m\n'}
+[16.575471] (-) TimerEvent: {}
+[16.621551] (team_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/team_interfaces/msg/detail/trafficlight__type_support.cpp.o\x1b[0m\n'}
+[16.675804] (-) TimerEvent: {}
+[16.776598] (-) TimerEvent: {}
+[16.877389] (-) TimerEvent: {}
+[16.978206] (-) TimerEvent: {}
+[17.079039] (-) TimerEvent: {}
+[17.136744] (team_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libteam_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[17.179850] (-) TimerEvent: {}
+[17.270779] (vesc_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[17.280258] (-) TimerEvent: {}
+[17.297872] (team_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/team_interfaces/msg/detail/dds_fastrtps/trafficlight__type_support.cpp.o\x1b[0m\n'}
+[17.380471] (-) TimerEvent: {}
+[17.481299] (-) TimerEvent: {}
+[17.496644] (vesc_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[17.518559] (team_interfaces) StdoutLine: {'line': b'[ 47%] Built target team_interfaces__rosidl_typesupport_cpp\n'}
+[17.522526] (vesc_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[17.581607] (-) TimerEvent: {}
+[17.618773] (team_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[17.681968] (-) TimerEvent: {}
+[17.783257] (-) TimerEvent: {}
+[17.799328] (vesc_msgs) StdoutLine: {'line': b'[ 58%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c\n'}
+[17.881849] (vesc_msgs) StdoutLine: {'line': b'[ 60%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[17.883427] (-) TimerEvent: {}
+[17.944315] (vesc_msgs) StdoutLine: {'line': b'[ 60%] Built target vesc_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[17.975714] (vesc_msgs) StdoutLine: {'line': b'[ 60%] Built target vesc_msgs__rosidl_typesupport_introspection_cpp\n'}
+[17.983901] (-) TimerEvent: {}
+[18.084693] (-) TimerEvent: {}
+[18.109862] (team_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/team_interfaces/msg/detail/emergency__type_support_c.cpp.o\x1b[0m\n'}
+[18.185006] (-) TimerEvent: {}
+[18.259368] (team_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/team_interfaces/msg/detail/emergency__type_support.cpp.o\x1b[0m\n'}
+[18.285334] (-) TimerEvent: {}
+[18.353090] (vesc_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state__type_support.c.o\x1b[0m\n'}
+[18.362224] (vesc_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support.c.o\x1b[0m\n'}
+[18.371381] (vesc_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.c.o\x1b[0m\n'}
+[18.385643] (-) TimerEvent: {}
+[18.486513] (-) TimerEvent: {}
+[18.553659] (vesc_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c.o\x1b[0m\n'}
+[18.586781] (-) TimerEvent: {}
+[18.687611] (-) TimerEvent: {}
+[18.780104] (vesc_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking C shared library libvesc_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[18.787934] (-) TimerEvent: {}
+[18.828475] (team_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/team_interfaces/msg/detail/dds_fastrtps/emergency__type_support.cpp.o\x1b[0m\n'}
+[18.888291] (-) TimerEvent: {}
+[18.916284] (vesc_msgs) StdoutLine: {'line': b'[ 69%] Built target vesc_msgs__rosidl_typesupport_introspection_c\n'}
+[18.988551] (-) TimerEvent: {}
+[19.089390] (-) TimerEvent: {}
+[19.126911] (team_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/team_interfaces/msg/detail/car__type_support.c.o\x1b[0m\n'}
+[19.186000] (team_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libteam_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[19.189601] (-) TimerEvent: {}
+[19.290565] (-) TimerEvent: {}
+[19.292150] (team_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/team_interfaces/msg/detail/lane__type_support.c.o\x1b[0m\n'}
+[19.390867] (-) TimerEvent: {}
+[19.398930] (vesc_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vesc_msgs/msg/vesc_state__type_support.cpp.o\x1b[0m\n'}
+[19.406172] (vesc_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.cpp.o\x1b[0m\n'}
+[19.411155] (vesc_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vesc_msgs/msg/vesc_state_stamped__type_support.cpp.o\x1b[0m\n'}
+[19.438903] (vesc_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.o\x1b[0m\n'}
+[19.465994] (team_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/team_interfaces/msg/detail/signs__type_support.c.o\x1b[0m\n'}
+[19.491195] (-) TimerEvent: {}
+[19.497966] (team_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libteam_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[19.542876] (team_interfaces) StdoutLine: {'line': b'[ 61%] Built target team_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[19.579329] (vesc_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[19.591501] (-) TimerEvent: {}
+[19.592977] (team_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[19.617364] (team_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/team_interfaces/msg/detail/trafficlight__type_support.c.o\x1b[0m\n'}
+[19.691835] (-) TimerEvent: {}
+[19.780127] (team_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/team_interfaces/msg/detail/emergency__type_support.c.o\x1b[0m\n'}
+[19.792089] (-) TimerEvent: {}
+[19.826509] (team_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libteam_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[19.831383] (vesc_msgs) StdoutLine: {'line': b'[ 78%] Built target vesc_msgs__rosidl_typesupport_c\n'}
+[19.852507] (team_interfaces) StdoutLine: {'line': b'[ 68%] Built target team_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[19.875017] (team_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking C shared library libteam_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[19.892409] (-) TimerEvent: {}
+[19.894998] (vesc_msgs) StdoutLine: {'line': b'[ 78%] Built target vesc_msgs\n'}
+[19.962561] (vesc_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[19.970952] (team_interfaces) StdoutLine: {'line': b'[ 69%] Built target team_interfaces__rosidl_typesupport_introspection_c\n'}
+[19.992723] (-) TimerEvent: {}
+[20.031530] (team_interfaces) StdoutLine: {'line': b'[ 69%] Built target team_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[20.093051] (-) TimerEvent: {}
+[20.193887] (-) TimerEvent: {}
+[20.294711] (-) TimerEvent: {}
+[20.395505] (-) TimerEvent: {}
+[20.396130] (team_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/team_interfaces/msg/car__type_support.cpp.o\x1b[0m\n'}
+[20.396558] (team_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/team_interfaces/msg/lane__type_support.cpp.o\x1b[0m\n'}
+[20.398999] (team_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/team_interfaces/msg/signs__type_support.cpp.o\x1b[0m\n'}
+[20.408579] (team_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/team_interfaces/msg/trafficlight__type_support.cpp.o\x1b[0m\n'}
+[20.492868] (team_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/team_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/team_interfaces/msg/emergency__type_support.cpp.o\x1b[0m\n'}
+[20.496139] (-) TimerEvent: {}
+[20.568500] (team_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libteam_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[20.596669] (-) TimerEvent: {}
+[20.668319] (team_interfaces) StdoutLine: {'line': b'[ 79%] Built target team_interfaces__rosidl_typesupport_c\n'}
+[20.696964] (-) TimerEvent: {}
+[20.719064] (team_interfaces) StdoutLine: {'line': b'[ 79%] Built target team_interfaces\n'}
+[20.777849] (team_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[20.797296] (-) TimerEvent: {}
+[20.898114] (-) TimerEvent: {}
+[20.998904] (-) TimerEvent: {}
+[21.099719] (-) TimerEvent: {}
+[21.200506] (-) TimerEvent: {}
+[21.301352] (-) TimerEvent: {}
+[21.402019] (-) TimerEvent: {}
+[21.502861] (-) TimerEvent: {}
+[21.603511] (-) TimerEvent: {}
+[21.612298] (vesc_msgs) StdoutLine: {'line': b'[ 80%] Built target vesc_msgs__py\n'}
+[21.667007] (vesc_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_generator_py.dir/rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped_s.c.o\x1b[0m\n'}
+[21.673026] (vesc_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_generator_py.dir/rosidl_generator_py/vesc_msgs/msg/_vesc_state_s.c.o\x1b[0m\n'}
+[21.677616] (vesc_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_generator_py.dir/rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c.o\x1b[0m\n'}
+[21.681857] (vesc_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_generator_py.dir/rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c.o\x1b[0m\n'}
+[21.703987] (-) TimerEvent: {}
+[21.804796] (-) TimerEvent: {}
+[21.905640] (-) TimerEvent: {}
+[21.993237] (vesc_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/vesc_msgs/libvesc_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[22.005958] (-) TimerEvent: {}
+[22.095763] (vesc_msgs) StdoutLine: {'line': b'[ 89%] Built target vesc_msgs__rosidl_generator_py\n'}
+[22.106270] (-) TimerEvent: {}
+[22.150719] (vesc_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[22.165953] (vesc_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[22.205554] (vesc_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[22.206518] (-) TimerEvent: {}
+[22.307429] (-) TimerEvent: {}
+[22.310475] (team_interfaces) StdoutLine: {'line': b'[ 80%] Built target team_interfaces__py\n'}
+[22.383006] (team_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_py.dir/rosidl_generator_py/team_interfaces/msg/_lane_s.c.o\x1b[0m\n'}
+[22.407751] (-) TimerEvent: {}
+[22.416291] (team_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_py.dir/rosidl_generator_py/team_interfaces/msg/_signs_s.c.o\x1b[0m\n'}
+[22.416670] (team_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_py.dir/rosidl_generator_py/team_interfaces/msg/_trafficlight_s.c.o\x1b[0m\n'}
+[22.419756] (team_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_py.dir/rosidl_generator_py/team_interfaces/msg/_car_s.c.o\x1b[0m\n'}
+[22.508088] (-) TimerEvent: {}
+[22.580820] (vesc_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/vesc_msgs/vesc_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[22.604129] (vesc_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/vesc_msgs/vesc_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[22.608349] (-) TimerEvent: {}
+[22.634155] (vesc_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/vesc_msgs/vesc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[22.702407] (team_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_generator_py.dir/rosidl_generator_py/team_interfaces/msg/_emergency_s.c.o\x1b[0m\n'}
+[22.708645] (-) TimerEvent: {}
+[22.809514] (-) TimerEvent: {}
+[22.814492] (vesc_msgs) StdoutLine: {'line': b'[100%] Built target vesc_msgs__rosidl_typesupport_c__pyext\n'}
+[22.842578] (vesc_msgs) StdoutLine: {'line': b'[100%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[22.844734] (vesc_msgs) StdoutLine: {'line': b'[100%] Built target vesc_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[22.877028] (vesc_msgs) JobEnded: {'identifier': 'vesc_msgs', 'rc': 'SIGINT'}
+[22.909794] (-) TimerEvent: {}
+[22.942754] (team_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/team_interfaces/libteam_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[23.010277] (-) TimerEvent: {}
+[23.111716] (-) TimerEvent: {}
+[23.168657] (team_interfaces) StdoutLine: {'line': b'[ 90%] Built target team_interfaces__rosidl_generator_py\n'}
+[23.212711] (-) TimerEvent: {}
+[23.237241] (team_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/team_interfaces/_team_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[23.238282] (team_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/team_interfaces/_team_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[23.241042] (team_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/team_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/team_interfaces/_team_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[23.313214] (-) TimerEvent: {}
+[23.414392] (-) TimerEvent: {}
+[23.505169] (team_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/team_interfaces/team_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[23.505568] (team_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/team_interfaces/team_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[23.506360] (team_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/team_interfaces/team_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[23.514665] (-) TimerEvent: {}
+[23.602674] (team_interfaces) StdoutLine: {'line': b'[100%] Built target team_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[23.603074] (team_interfaces) StdoutLine: {'line': b'[100%] Built target team_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[23.604656] (team_interfaces) StdoutLine: {'line': b'[100%] Built target team_interfaces__rosidl_typesupport_c__pyext\n'}
+[23.615016] (-) TimerEvent: {}
+[23.636545] (team_interfaces) JobEnded: {'identifier': 'team_interfaces', 'rc': 'SIGINT'}
+[23.648898] (vesc_ackermann) JobSkipped: {'identifier': 'vesc_ackermann'}
+[23.649212] (serial_driver) JobSkipped: {'identifier': 'serial_driver'}
+[23.649371] (udp_driver) JobSkipped: {'identifier': 'udp_driver'}
+[23.649455] (vesc_driver) JobSkipped: {'identifier': 'vesc_driver'}
+[23.649520] (vesc) JobSkipped: {'identifier': 'vesc'}
+[23.649584] (-) EventReactorShutdown: {}

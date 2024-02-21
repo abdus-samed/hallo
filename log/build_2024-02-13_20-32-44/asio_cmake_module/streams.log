@@ -1,0 +1,47 @@
+[0.682s] Invoking command in '/home/samet/hallo/build/asio_cmake_module': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/samet/hallo/install/camera_run /usr/bin/cmake /home/samet/hallo/src/transport_drivers/asio_cmake_module -DCMAKE_INSTALL_PREFIX=/home/samet/hallo/install/asio_cmake_module
+[1.411s] -- The C compiler identification is GNU 11.4.0
+[1.412s] -- The CXX compiler identification is GNU 11.4.0
+[1.412s] -- Detecting C compiler ABI info
+[1.412s] -- Detecting C compiler ABI info - done
+[1.412s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.413s] -- Detecting C compile features
+[1.413s] -- Detecting C compile features - done
+[1.414s] -- Detecting CXX compiler ABI info
+[1.647s] -- Detecting CXX compiler ABI info - done
+[1.671s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.672s] -- Detecting CXX compile features
+[1.675s] -- Detecting CXX compile features - done
+[1.680s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.090s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.291s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.501s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.505s] -- Added test 'lint_cmake' to check CMake code style
+[2.509s] -- Added test 'xmllint' to check XML markup files
+[2.514s] -- Configuring done
+[2.525s] -- Generating done
+[2.525s] -- Build files have been written to: /home/samet/hallo/build/asio_cmake_module
+[2.534s] Invoked command in '/home/samet/hallo/build/asio_cmake_module' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/samet/hallo/install/camera_run /usr/bin/cmake /home/samet/hallo/src/transport_drivers/asio_cmake_module -DCMAKE_INSTALL_PREFIX=/home/samet/hallo/install/asio_cmake_module
+[2.535s] Invoking command in '/home/samet/hallo/build/asio_cmake_module': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/samet/hallo/install/camera_run /usr/bin/cmake --build /home/samet/hallo/build/asio_cmake_module -- -j4 -l4
+[2.665s] Invoked command in '/home/samet/hallo/build/asio_cmake_module' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/samet/hallo/install/camera_run /usr/bin/cmake --build /home/samet/hallo/build/asio_cmake_module -- -j4 -l4
+[2.790s] Invoking command in '/home/samet/hallo/build/asio_cmake_module': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/samet/hallo/install/camera_run /usr/bin/cmake --install /home/samet/hallo/build/asio_cmake_module
+[2.812s] -- Install configuration: ""
+[2.816s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/ament_index/resource_index/package_run_dependencies/asio_cmake_module
+[2.821s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/ament_index/resource_index/parent_prefix_path/asio_cmake_module
+[2.828s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/environment/ament_prefix_path.sh
+[2.836s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/environment/ament_prefix_path.dsv
+[2.838s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/environment/path.sh
+[2.838s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/environment/path.dsv
+[2.839s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/local_setup.bash
+[2.839s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/local_setup.sh
+[2.840s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/local_setup.zsh
+[2.841s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/local_setup.dsv
+[2.842s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/package.dsv
+[2.842s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/ament_index/resource_index/packages/asio_cmake_module
+[2.843s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_module-extras.cmake
+[2.845s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_moduleConfig.cmake
+[2.845s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/cmake/asio_cmake_moduleConfig-version.cmake
+[2.845s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/package.xml
+[2.846s] -- Up-to-date: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/cmake
+[2.846s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules
+[2.847s] -- Installing: /home/samet/hallo/install/asio_cmake_module/share/asio_cmake_module/cmake/Modules/FindASIO.cmake
+[2.913s] Invoked command in '/home/samet/hallo/build/asio_cmake_module' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/samet/hallo/install/camera_run /usr/bin/cmake --install /home/samet/hallo/build/asio_cmake_module
